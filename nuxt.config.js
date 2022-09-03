@@ -10,7 +10,16 @@ export default {
   },
 
   head() {
-    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
+    let i18nHead = {
+      htmlAttrs: [],
+      meta: [],
+      link: []
+    };
+
+    if (this.$nuxtI18nHead != null) {
+      i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
+    }
+  
     return {
       htmlAttrs: {
         myAttribute: "My Value",
@@ -32,9 +41,6 @@ export default {
           href: "/apple-touch-icon.png",
         },
         ...i18nHead.link,
-      ],
-      script: [
-        { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" },
       ],
     };
   },
