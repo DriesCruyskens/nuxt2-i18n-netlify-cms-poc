@@ -22,24 +22,12 @@ export default {
 
     return {
       htmlAttrs: {
-        myAttribute: "My Value",
         ...i18nHead.htmlAttrs,
       },
       meta: [
-        {
-          hid: "description",
-          name: "description",
-          content: "My Custom Description",
-        },
         ...i18nHead.meta,
       ],
       link: [
-        {
-          hid: "apple-touch-icon",
-          rel: "apple-touch-icon",
-          sizes: "180x180",
-          href: "/apple-touch-icon.png",
-        },
         ...i18nHead.link,
       ],
     };
@@ -73,6 +61,7 @@ export default {
     lazy: true,
     fallbackLocale: "en",
     langDir: "content/i18n",
+    strategy: "prefix_and_default",
     detectBrowserLanguage: {
       fallbackLocale: "en",
     },
