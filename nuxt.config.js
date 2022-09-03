@@ -13,13 +13,13 @@ export default {
     let i18nHead = {
       htmlAttrs: [],
       meta: [],
-      link: []
+      link: [],
     };
 
     if (this.$nuxtI18nHead != null) {
       i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
     }
-  
+
     return {
       htmlAttrs: {
         myAttribute: "My Value",
@@ -49,7 +49,7 @@ export default {
 
   i18n: {
     // TODO: baseUrl needed for SEO
-    baseUrl: "https://example.com",
+    baseUrl: "https://dreamy-brioche-1bb280.netlify.app",
     locales: [
       {
         code: "en",
