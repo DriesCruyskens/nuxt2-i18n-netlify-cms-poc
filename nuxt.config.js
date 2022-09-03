@@ -24,11 +24,10 @@ export default {
       htmlAttrs: {
         ...i18nHead.htmlAttrs,
       },
-      meta: [
-        ...i18nHead.meta,
-      ],
-      link: [
-        ...i18nHead.link,
+      meta: [...i18nHead.meta],
+      link: [...i18nHead.link],
+      script: [
+        { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" },
       ],
     };
   },
