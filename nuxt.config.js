@@ -59,12 +59,8 @@ export default {
       },
     ],
     lazy: true,
-    fallbackLocale: "en",
+    defaultLocale: "en",
     langDir: "content/i18n",
-    strategy: "prefix_and_default",
-    detectBrowserLanguage: {
-      fallbackLocale: "en",
-    },
     vueI18n: {
       fallbackLocale: "en",
     },
