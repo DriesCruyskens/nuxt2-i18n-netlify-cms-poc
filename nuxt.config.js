@@ -73,9 +73,8 @@ export default {
     lazy: true,
     fallbackLocale: "en",
     langDir: "content/i18n",
-    rootRedirect: {
-      statusCode: 301,
-      path: "en",
+    detectBrowserLanguage: {
+      fallbackLocale: "en",
     },
     vueI18n: {
       fallbackLocale: "en",
