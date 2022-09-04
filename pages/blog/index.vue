@@ -4,7 +4,9 @@
 
     <ul>
       <li v-for="post in posts" :key="post.title">
-        <NuxtLink :to="`${localePath('blog')}/${post.slug}`">
+        <NuxtLink
+          :to="`{ name: ${localePath('blog')}, params: { slug: ${post.slug} } }`"
+        >
           <h3>
             {{ post.title }}
           </h3>
