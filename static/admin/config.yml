@@ -27,13 +27,13 @@ collections:
     format: 'frontmatter'
     create: true
     # Using a custom slug field because normal slug is the same for 
-    # all locales
-    slug: '{{fields.slug}}'
+    # all locales. We are treating the filename more as an ID than a slug.
+    slug: '{{customSlug}}'
     editor:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string', i18n: true }
-      - { label: 'Slug', name: 'slug', widget: 'string', i18n: true, hint: 'URL slug, ex: /blog/my-blog-post', pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', 'Not a valid slug']}
+      - { label: 'Slug', name: 'customSlug', widget: 'string', i18n: true, hint: 'URL slug, ex: /blog/my-blog-post. Can NOT be the same for different locales!', pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', 'Not a valid slug']}
       - { label: 'Publish Date', name: 'date', widget: 'datetime', i18n: duplicate }
       - { label: 'Description', name: 'description', widget: 'string', i18n: true }
       - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
