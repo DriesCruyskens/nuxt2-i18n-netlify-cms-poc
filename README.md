@@ -2,7 +2,7 @@
 
 Minimal proof of concept with:
 
-- Nuxt v2
+- Nuxt v2 (i18n was not yet fully ported to v3)
 - Full SSG
 - i18n strings
 - Internationalised dynamic routes, configured in the CMS
@@ -10,6 +10,8 @@ Minimal proof of concept with:
 - Netlify CMS with i18n
 - Navigation
 - Language switcher
+
+Live demo here: <https://playful-stardust-3a0d46.netlify.app/>
 
 ## Get started
 
