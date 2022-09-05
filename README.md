@@ -45,6 +45,10 @@ cp .env.example .env
 - In `static/admin/config.yml`
 - Delete or fix `content/blog`
 
+### 4. Important note
+
+The `SLUG` field in Netlify CMS **HAS** to be unique for each entry AND locale.
+
 ## References
 - <https://playful-stardust-3a0d46.netlify.app/>
 - <https://nuxtjs.org/docs/get-started/installation>
