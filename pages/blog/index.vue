@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Welcome to the blog</h1>
+    <h1>{{ $t("welcomeToTheBlog") }}</h1>
 
     <ul>
       <li v-for="post in posts" :key="post.title">

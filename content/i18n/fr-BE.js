@@ -1,7 +1,10 @@
 export default async (context, locale) => {
   return await Promise.resolve({
     welcome: "Bienvenue",
-    home: "Acceuil",
-    blog: "Le Blog"
+    welcomeToTheBlog: "Bienvenue chez le blog",
+    nav: {
+      home: "Acceuil",
+      blog: "Le Blog",
+    },
   });
 };

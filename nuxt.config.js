@@ -28,12 +28,17 @@ export default {
     };
   },
 
-  modules: ["@nuxt/content", "@nuxtjs/i18n"],
+  modules: [
+    "@nuxt/content", // https://content.nuxtjs.org/v1/getting-started/introduction
+    "@nuxtjs/i18n", // https://i18n.nuxtjs.org/basic-usage  https://kazupon.github.io/vue-i18n/
+  ],
 
   i18n: {
     // TODO: baseUrl needed for SEO
     baseUrl: "https://dreamy-brioche-1bb280.netlify.app",
     locales: [
+      // First locale is catch-all for SEO.
+      // https://i18n.nuxtjs.org/seo#feature-details
       {
         code: "en",
         name: "English",
