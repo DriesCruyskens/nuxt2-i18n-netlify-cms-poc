@@ -44,3 +44,10 @@ cp .env.example .env
 - In `content/i18n`
 - In `static/admin/config.yml`
 - Delete or fix `content/blog`
+
+## References
+- <https://playful-stardust-3a0d46.netlify.app/>
+- <https://nuxtjs.org/docs/get-started/installation>
+- <https://content.nuxtjs.org/v1/getting-started/introduction>
+- <https://i18n.nuxtjs.org/basic-usage>  
+- <https://kazupon.github.io/vue-i18n/>
