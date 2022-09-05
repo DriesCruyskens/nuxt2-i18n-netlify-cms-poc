@@ -10,6 +10,8 @@ export default {
   async asyncData({ $content, params, app, error, store }) {
     const currentLocale = app.i18n.locale;
 
+    // Getting the right post using the 'where' function and not 
+    // directly because the filename is the same for all locales.
     const currentPost = (await $content(`blog/${currentLocale}`)
       .where({
         customSlug: params.slug,
