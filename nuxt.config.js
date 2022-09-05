@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: "static",
@@ -35,7 +37,7 @@ export default {
 
   i18n: {
     // TODO: baseUrl needed for SEO
-    baseUrl: "https://dreamy-brioche-1bb280.netlify.app",
+    baseUrl: process.env.BASE_URL,
     locales: [
       // First locale is catch-all for SEO.
       // https://i18n.nuxtjs.org/seo#feature-details
