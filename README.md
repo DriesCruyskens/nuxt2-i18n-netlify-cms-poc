@@ -55,3 +55,6 @@ The `SLUG` field in Netlify CMS **HAS** to be unique for each entry AND locale.
 - <https://content.nuxtjs.org/v1/getting-started/introduction>
 - <https://i18n.nuxtjs.org/basic-usage>  
 - <https://kazupon.github.io/vue-i18n/>
+
+## TODO
+  - image optimisation

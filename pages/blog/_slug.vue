@@ -57,7 +57,8 @@ export default {
         [locale]: {
           slug: (
             await $content(
-              `${postDir.replace(currentLocale, locale)}/${
+              // Replace the last part of the path (which should be the currentLocal) with the correct route locale.
+              `${postDir.replace(new RegExp(`[^\/]*${currentLocale}$`), locale)}/${
                 currentPost.slug
               }`
             ).fetch()
