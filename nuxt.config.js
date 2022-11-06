@@ -35,6 +35,10 @@ export default {
     "@nuxtjs/i18n", // https://i18n.nuxtjs.org/basic-usage  https://kazupon.github.io/vue-i18n/
   ],
 
+  buildModules: [
+    '@nuxt/image',
+  ],
+
   i18n: {
     // TODO: baseUrl needed for SEO
     baseUrl: process.env.BASE_URL,
